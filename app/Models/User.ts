@@ -15,6 +15,9 @@ export default class User extends BaseModel {
   public is_coming: boolean
 
   @column()
+  public session: boolean
+
+  @column()
   public message: string
 
   @column.dateTime({ autoCreate: true })

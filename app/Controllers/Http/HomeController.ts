@@ -13,7 +13,9 @@ export default class HomeController {
     const user = await User.findBy('uid', uid)
 
     return await ctx.view.render('home', {
-      user: user?.name
+      user: user?.name,
+      session: user?.session
+
     })
   }
 }

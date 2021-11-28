@@ -78,7 +78,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<div style="text-align: center;" id="fh5co-logo"><a href="index.html">Welcome<strong>.</strong></a></div>
+					<div style="text-align: center;" id="fh5co-logo"><a href="#">Welcome<strong>.</strong></a></div>
 				</div>
 				<!-- <div class="col-xs-10 text-right menu-1">
 					<ul>
@@ -120,7 +120,7 @@
 							<h1>Varra &amp; Donny</h1>
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="webcal://192.168.31.195/rabi/assets/Varra Wedding.ics" class="btn btn-default btn-sm">Save the date</a></p>
+							<p><a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MnYyNnI0NmUwNzZmcDl1b2gyMDQyajV1dm4gZG9uaWlhd2FuQG0&tmsrc=doniiawan%40gmail.com" class="btn btn-default btn-sm">Save the date</a></p>
 						</div>
 					</div>
 				</div>
@@ -178,10 +178,12 @@
 			<div class="row">
 				<div class="display-t">
 					<div class="display-tc">
-						<div class="col-md-10 col-md-offset-1">
-							<div class="col-md-6 col-sm-6 text-center">
+						<div class="col-md-9 col-md-offset-1">
+							@if (session == true)
+							<div class="col-md-3 col-sm-3 text-center"></div>
+							<div class="col-md-8 col-sm-8 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Main Ceremony</h3>
+									<h3>Wedding Session 1</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
 										<span>11:00</span>
@@ -195,9 +197,11 @@
 									<p></p>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6 text-center">
+							@else
+							<div class="col-md-3 col-sm-3 text-center"></div>
+							<div class="col-md-8 col-sm-8 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Wedding Party</h3>
+									<h3>Wedding Session 2</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
 										<span>12:30</span>
@@ -211,6 +215,7 @@
 									<p></p>
 								</div>
 							</div>
+							@endif
 						</div>
 					</div>
 				</div>
